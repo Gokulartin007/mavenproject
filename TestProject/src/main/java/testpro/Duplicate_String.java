@@ -12,7 +12,7 @@ public class Duplicate_String {
 					if(arr[i]==arr[j]) {
 						dup=arr[i];
 					}
-					System.out.print(" "+dup);
+					System.out.print("dup "+dup);
 			}
 			
 		}

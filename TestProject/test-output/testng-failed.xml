@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="javaConcepts.loginPage">
+      <class name="testngPack.login">
         <methods>
-          <include name="login" invocation-numbers="0 1"/>
+          <include name="main" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- javaConcepts.loginPage -->
+      </class> <!-- testngPack.login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

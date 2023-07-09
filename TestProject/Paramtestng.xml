@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="email" value="gosekar"></parameter>
+	<parameter name="password" value="gosekar Pass"></parameter>
+	
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testngPack.para"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
