@@ -40,8 +40,8 @@ public class loginPage {
 	public void login(String Email,String Pass) throws IOException, AWTException, InterruptedException {
 
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul.s05\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver=
 		WebDriverManager.chromedriver().create();
+		WebDriver driver=new ChromeDriver();
 		String URL ="https://en-gb.facebook.com/";
 		driver.get(URL);
 		driver.manage().window().maximize();

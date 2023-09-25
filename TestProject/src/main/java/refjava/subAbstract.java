@@ -11,6 +11,7 @@ public class subAbstract extends simplecode {
   
 	public static void main(String[] args) {
 		subAbstract se=new subAbstract();
+		
 		se.mul(limit, limit);
 	}
 

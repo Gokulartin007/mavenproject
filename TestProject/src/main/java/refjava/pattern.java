@@ -2,7 +2,7 @@ package refjava;
 
 public class pattern {
 
-		public void star() {
+		public static void star() {
 				
 				int i;
 				for(i=1; i<=5; i++) {
@@ -13,5 +13,8 @@ public class pattern {
 				}
 				System.out.println("");
 			}
-	
+public static void main(String[] args) {
+	star();
+}	
+
 }

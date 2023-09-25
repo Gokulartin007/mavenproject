@@ -15,7 +15,8 @@ public class Construct {
 	}
 	
 	Construct(int value){
-		//constructor overloading 
+		//constructor overloading
+		this.value=value;
 		System.out.println("constructor overloading value "+value);
 	}
 	

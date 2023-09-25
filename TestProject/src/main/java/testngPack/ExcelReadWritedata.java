@@ -31,7 +31,8 @@ public class ExcelReadWritedata {
 		for (int i = 1; i <=rows; i++) {
 			XSSFRow row=sheet.getRow(i);
 			DataFormatter dt=new DataFormatter();
-				String col1= row.getCell(0).getStringCellValue();//will return the string value 
+				String col1= row.getCell(0).getStringCellValue();//will return the string value
+				System.err.println(row.getCell(1).getNumericCellValue());;//will return the numeric value 
 				String col2= dt.formatCellValue(row.getCell(1));//it will convert the int data type into string and return
 				System.out.println( col1 +" "+col2);
 			

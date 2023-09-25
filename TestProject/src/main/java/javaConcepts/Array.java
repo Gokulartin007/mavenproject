@@ -10,7 +10,9 @@ public class Array {
 		 * String[] brand2= {"hero","honda","ktm","bajaj","RE"}; String
 		 * ind2=brand2[2-1]; System.out.println(ind2);
 		 */
-		
+		int[] arr= {2,3,5,3,5};
+		System.out.println(Arrays.toString(arr));
+		System.out.println(arr[1]+arr[2]);
 		
 		String ind=brand[2-1];
 		System.out.println("Printing directly "+brand[1]);

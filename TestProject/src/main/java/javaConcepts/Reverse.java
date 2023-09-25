@@ -1,5 +1,7 @@
 package javaConcepts;
 
+import java.util.Iterator;
+
 public class Reverse {
 
 	public void ReverseString(String Name) {
@@ -92,6 +94,22 @@ public class Reverse {
 		} else
 			System.out.println(Name + " is not an Palindrome");
 
+	}
+	
+	
+	public static void name() {
+		String name="Gokul";
+		char[] arr=name.toCharArray();
+		
+		
+	}
+	
+	
+	public static void SwapStringWithoutTemp() {
+		String Str1="Gokul";
+		String Str2="Sam";
+		
+		
 	}
 
 	public static void main(String[] args) {

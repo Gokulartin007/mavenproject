@@ -31,7 +31,7 @@ public class Grouping {
 	
 	@Test(groups = {"look"})
 	public void Sropio() {
-		System.out.println("rugud look");
+		System.out.println("rugged look");
 		}
 
 }
