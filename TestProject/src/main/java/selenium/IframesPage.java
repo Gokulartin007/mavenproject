@@ -39,7 +39,7 @@ public class IframesPage {
 			System.out.println(framesCount.get(i).getAttribute("name"));
 
 		}
-		//passing name as argument we need name mention attribute name r id..automatically it will search for name or id  
+		//passing name as argument we need name mention attribute name or id..automatically it will search for name or id  
 		driver.switchTo().frame("firstFr"); 
 		driver.findElement(By.name("fname")).sendKeys("Gokul");
 		driver.findElement(By.name("lname")).sendKeys("s");
@@ -47,7 +47,7 @@ public class IframesPage {
 		WebElement innerframe=driver.findElement(By.xpath("//iframe[@class='has-background-white']"));
 		//passing index as argument..here we give 0 as index bcause its a inner frame of above frame
 		driver.switchTo().frame(innerframe);
-		driver.findElement(By.name("email")).sendKeys("gokulartin007@gmail.com");;
+		driver.findElement(By.name("email")).sendKeys("gokulartin007@gmail.com");
 
 		//get one frame backward
 		driver.switchTo().parentFrame();

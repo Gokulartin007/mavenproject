@@ -2,6 +2,7 @@ package utils;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtendsReport {
@@ -17,6 +18,9 @@ public class ExtendsReport {
 			
 			ExtentTest test=extend.createTest("Test run TC001");
 			test.pass("login step");
+			test.log(Status.INFO," step login");
+			test.assignAuthor("gokul");
+			test.assignAuthor("haritha");
 			extend.flush();
 			
 	}

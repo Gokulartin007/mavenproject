@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngPack.login">
+      <class name="testngPack.ExtentReportor">
         <methods>
-          <include name="main" invocation-numbers="1 2"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="func"/>
         </methods>
-      </class> <!-- testngPack.login -->
+      </class> <!-- testngPack.ExtentReportor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

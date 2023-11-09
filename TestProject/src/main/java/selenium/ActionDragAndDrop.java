@@ -18,9 +18,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *         object from one frame and drop into another frame
  */
 public class ActionDragAndDrop {
-
+	
+	static int a;
 	public static void main(String[] args) {
-
+		
+		int b = 0;
+		System.out.println(a);
+		System.out.println(b);
+		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://letcode.in/dropable");
@@ -40,7 +45,7 @@ public class ActionDragAndDrop {
 
 		// draggable item in frame so using frame
 		driver.switchTo().frame(0);
-		WebElement ele = driver.findElement(By.id("draggable"));
+		WebElement ele = driver.findElement(By.id("draggable"));             
 
 		int x = ele.getLocation().getX();
 		int y = ele.getLocation().getY();

@@ -17,8 +17,8 @@ public class ActiveElement {
 	//we can interact with active element without finding it just like switchTo().active element 
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gokul\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
@@ -28,7 +28,7 @@ public class ActiveElement {
 		WebElement ele=driver.switchTo().activeElement();
 		ele.sendKeys("Gokulartin007@gmail.com",Keys.TAB,"465850071",Keys.ENTER);
 		
-		//will launchh new chrome window(not tab) 
+		//will launch new chrome window(not tab) 
 		driver.switchTo().newWindow(WindowType.WINDOW);
 		driver.get("https://www.google.com/");
 		
