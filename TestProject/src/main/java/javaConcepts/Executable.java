@@ -7,6 +7,7 @@ public class Executable {
 		ob.ReverseString("gokul");
 		ob.specialChar("&%go$#ku2$l#");
 		ob.SpaceChar("   go ku  l   ");
+		ob.SpaceCharWithoutMethod("   go ku  l   ");
 		ob.oddeven("gokul");
 		ob.palindrome("MALAYALA");
 		//System.out.println(ab);

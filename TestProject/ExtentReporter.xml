@@ -3,9 +3,9 @@
 <suite name="Suite">
 
 	<parameter name="Tc_name" value="TC_001_TestRun"></parameter>
-  <test thread-count="5" name="Test">
-  <classes>
-      <class name="testngPack.ExtentReportor"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testngPack.ExtentReportor" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

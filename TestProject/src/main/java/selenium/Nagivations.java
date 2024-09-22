@@ -10,9 +10,9 @@ public class Nagivations {
 		
 	
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul.s05\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	WebDriver driver = new ChromeDriver();
+	ChromeDriver driver = new ChromeDriver();
 	String URL="https://letcode.in/buttons";
-	driver.get(URL);
+	driver.navigate().to(URL);
 	driver.manage().window().maximize();
 	
 	driver.findElement(By.id("home")).click();

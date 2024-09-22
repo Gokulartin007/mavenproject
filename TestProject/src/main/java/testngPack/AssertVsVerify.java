@@ -34,7 +34,7 @@ public class AssertVsVerify {
 		// TODO Auto-generated method stub
 		AssertVsVerify ass=new AssertVsVerify();
 		
-		ass.SoftAssert();
+		AssertVsVerify.SoftAssert();
 		ass.hardAssert();
 	}
 

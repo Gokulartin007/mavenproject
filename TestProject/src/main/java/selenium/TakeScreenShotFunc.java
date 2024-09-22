@@ -14,7 +14,7 @@ import org.openqa.selenium.io.FileHandler;
 public class TakeScreenShotFunc {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul.s05\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul.s05\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		WebDriver driver1= new ChromeDriver();
 		String URL="https://letcode.in/buttons";

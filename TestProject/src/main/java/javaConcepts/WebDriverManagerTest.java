@@ -23,7 +23,7 @@ public class WebDriverManagerTest {
 		
 		/*  <-- 2nd METHOD with webdriver manager 4.0 version -->
 		 * 
-		 * WebDriverManager.chromedriver().setup();  // it will check for driver and browser compatibility available in ur machine and set the system property (System.setProperty)   
+		 * WebDriverManager.chromedriver().setup();  // it will check for chrome driver and browser compatibility available in ur machine and set the system property (System.setProperty)   
 		 * WebDriver driver= new ChromeDriver(); // need to initialize the webdriver
 		 * driver.get("https://www.google.com/");
 		 */

@@ -29,6 +29,9 @@ public class Construct {
 		
 		Construct cs=new Construct(25);		
 		System.out.println(cs.value);
+		
+		Construct cs1=new Construct();
+		System.out.println(cs1.value);
 	}
 
 }

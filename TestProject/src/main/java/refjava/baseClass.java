@@ -18,7 +18,7 @@ public class baseClass  {
 		
 		
 		//creating reference variable for interface; 
-		//sample_Interface inter = new simplecode();
+		//sample_Interface inter = new simplecode(); we cannot create object for abstract class
 		
 		sample_Interface inter = new subAbstract();
 		// in this above concept v can call only interface function 

@@ -19,7 +19,9 @@ public class IndiumIQ {
 					break;
 				}
 
-			}}
+			}
+			}
+		System.out.println("");
 		System.out.println(count);
 
 	}

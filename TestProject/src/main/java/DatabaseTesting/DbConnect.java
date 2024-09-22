@@ -33,16 +33,14 @@ public class DbConnect {
 		ArrayList<String> list= new ArrayList<String>();
 		 while (result.next()) {
 			String colname1=result.getString("PersonID");
-			String col=result.getNString(3);
-			list.add(col);
-			System.err.println("col "+col);
-			list.add(colname1);
-			String colname2=result.getString(2);
-			list.add(colname2);
-			String colname3=result.getString(3);
-			list.add(colname3);
-			String colname4=result.getString(4);
-			list.add(colname4);
+			System.err.println("col "+colname1);
+			/*
+			 * String col=result.getNString(1); list.add(col);
+			 * System.err.println("col "+col); list.add(colname1); String
+			 * colname2=result.getString(2); list.add(colname2); String
+			 * colname3=result.getString(3); list.add(colname3); String
+			 * colname4=result.getString(4); list.add(colname4);
+			 */
 			
 		}
 		 for (String string : list) {

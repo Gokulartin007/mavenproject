@@ -9,9 +9,9 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * @author Gokul drag and drop will work within the frames, we cannot drag a
@@ -26,13 +26,15 @@ public class ActionDragAndDrop {
 		System.out.println(a);
 		System.out.println(b);
 		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		//WebDriverManager.chromedriver().setup();
+		WebDriver driver= new ChromeDriver();
+		
 		driver.get("https://letcode.in/dropable");
 		driver.manage().window().maximize();
 		// object creating actions class
 		Actions builder = new Actions(driver);
 		WebElement drag = driver.findElement(By.xpath("//p[text()='Drag me to my target']"));
+		System.out.println(drag.getCssValue("color"));
 		WebElement drop = driver.findElement(By.id("droppable"));
 		// after getting source and target using drag and drop option
 		builder.dragAndDrop(drag, drop).perform();

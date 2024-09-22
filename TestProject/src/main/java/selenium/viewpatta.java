@@ -19,16 +19,16 @@ public class viewpatta {
 	//we can interact with active element without finding it just like switchTo().active element 
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gokul\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gokul\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://eservices.tn.gov.in/eservicesnew/index.html");
 		driver.manage().window().maximize();
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.findElement(By.xpath("//button[@class='dropbtn']")).click();
+		driver.findElement(By.xpath("//button[@class='close']")).click();
 		//driver.findElement(By.xpath("//a[@href='home.html' and text()='English']")).click();
-		driver.findElement(By.xpath("//strong[text()='View Patta / Chitta']")).click();
+		driver.findElement(By.xpath("//strong[contains(text(),'View Patta / Chitta')]")).click();
 		Select se=new Select(driver.findElement(By.id("districtCode")));
 		se.selectByValue("01");
 		Select talk=new Select(driver.findElement(By.id("talukCode")));

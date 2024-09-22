@@ -8,7 +8,7 @@ public class Duplicate {
 		//String Quote="Iam Gokul I have 3 years of Experience";
 		char[] arr=Quote.toCharArray();
 		System.out.println(arr);
-		System.out.println(arr.length);
+		System.out.println("length of an array "+arr.length);
 		int count=0;
 		for(int i=0; i<Quote.length();i++) {
 			for(int j=i+1; j<Quote.length();j++) {

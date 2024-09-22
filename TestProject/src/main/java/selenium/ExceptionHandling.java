@@ -8,7 +8,7 @@ public class ExceptionHandling {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc= new Scanner(System.in);
-		try {
+		try { 
 			System.out.println("Enter 1st the number");
 			int a =sc.nextInt();
 			System.out.println("Enter 2nd the number");

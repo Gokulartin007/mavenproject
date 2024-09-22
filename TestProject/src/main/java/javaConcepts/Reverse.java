@@ -108,12 +108,20 @@ public class Reverse {
 	public static void SwapStringWithoutTemp() {
 		String Str1="Gokul";
 		String Str2="Sam";
+		Str1=Str1+Str2;
+		Str2=Str1.substring(0,Str1.length()-Str2.length());
+		Str1=Str1.substring(Str2.length());
 		
+		System.err.println(Str1);
+		System.err.println(Str2);
+		
+				
 		
 	}
 
 	public static void main(String[] args) {
 
+		SwapStringWithoutTemp();
 		palindrome("varsha");
 
 		// to access non-static method we need to create the instance/object of class

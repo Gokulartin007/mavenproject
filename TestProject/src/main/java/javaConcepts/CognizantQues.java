@@ -27,6 +27,7 @@ public class CognizantQues {
 
 
 		String str="Code";
+		System.err.println(str.charAt(1));
 		char[] arr=str.toCharArray();
 		for (int i=0; i<arr.length-3;i++){
 			System.out.print(arr[i]);

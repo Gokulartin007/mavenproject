@@ -24,6 +24,7 @@ public class PointsDimensions {
 		Point point =ele.getLocation();
 		System.out.println(point.getX());
 		System.out.println(point.getY());
+		System.out.println(point.y);
 		
 		
 		String color=driver.findElement(By.id("color")).getCssValue("background-color");

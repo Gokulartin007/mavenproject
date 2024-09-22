@@ -31,6 +31,7 @@ public class ExcelWrite2 {
 				DataFormatter dt= new DataFormatter();
 				String value =dt.formatCellValue(cell);
 				//String value = cell.getStringCellValue(); return nly string if numb present then throw error 
+				//double value2 = cell.getNumericCellValue(); //return nly numb if string present then throw error 
 				System.out.println(value);
 			} 
 		}
