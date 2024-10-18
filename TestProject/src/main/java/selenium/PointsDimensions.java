@@ -13,12 +13,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class PointsDimensions {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul.s05\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul.s05\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		String URL="https://letcode.in/buttons";
 		driver.get(URL);
 		driver.manage().window().maximize();
+		Dimension d=new Dimension(720,1080);
+		driver.manage().window().setSize(d);
 		//to get x and y coordinates
 		WebElement ele =driver.findElement(By.id("position"));
 		Point point =ele.getLocation();

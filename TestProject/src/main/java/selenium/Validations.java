@@ -1,5 +1,6 @@
 package selenium;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,7 +17,7 @@ public class Validations {
 	driver.get("https://letcode.in/dropdowns");
 	driver.manage().window().maximize();
 
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	
 	WebElement ele=driver.findElement(By.xpath("//h1[.=' Dropdown']"));
 	System.out.println(ele.isDisplayed());

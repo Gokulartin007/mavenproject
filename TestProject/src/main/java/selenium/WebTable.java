@@ -36,7 +36,7 @@ public class WebTable {
 		for (WebElement webElement : allRows) {
 			List<WebElement> column=webElement.findElements(By.tagName("td"));
 			WebElement Fdata=column.get(0);
-			System.out.println(Fdata.getText());
+			System.out.println("fdata "+Fdata.getText());
 			
 		}
 		

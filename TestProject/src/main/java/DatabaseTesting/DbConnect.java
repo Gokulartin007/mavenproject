@@ -28,7 +28,9 @@ public class DbConnect {
 		//create a statement to execute the query 
 		Statement stmt=  connect.createStatement();
 		String Query="select * from persons;";
+		String QueryUpdate="UPDATE persons SET PersonID = 1003988 WHERE PersonID = 1003982;";
 		//query string with stat
+		stmt.executeQuery(QueryUpdate);
 		ResultSet result= stmt.executeQuery(Query);
 		ArrayList<String> list= new ArrayList<String>();
 		 while (result.next()) {

@@ -12,7 +12,8 @@ public class TCS_rev {
 			}
 			StringBuilder bd= new StringBuilder(input);
 			StringBuilder rev=bd.reverse();
-			System.out.println(rev);
+			System.out.println("");
+			System.err.println(rev);
 	
 			StringBuffer bb=new StringBuffer(input);
 			StringBuffer reb=bb.reverse();

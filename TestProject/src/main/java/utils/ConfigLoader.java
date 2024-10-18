@@ -13,6 +13,8 @@ public class ConfigLoader {
 				
 				prop.load(file);
 				
+				Boolean check=prop.contains("Gokulartin007@gmail.com");
+				System.out.println(check);
 				return prop.getProperty(key);
 	}
 }

@@ -2,6 +2,8 @@ package javaConcepts;
 
 import java.util.Iterator;
 
+import org.openqa.selenium.By.Remotable;
+
 public class Reverse {
 
 	public void ReverseString(String Name) {
@@ -53,14 +55,17 @@ public class Reverse {
 
 	public void SpaceCharWithoutMethod(String Name) {
 		char[] arr=Name.toCharArray();
+		String removed="";
 		for (int i = 0; i < arr.length; i++) {
 
 			if (arr[i]==' ') {
 				continue;
-			}else
+			}else {
+				removed=removed+arr[i];
 				System.err.print(arr[i]);
-			
+			}
 		}
+		System.err.print(removed);
 		
 	}
 
@@ -100,7 +105,9 @@ public class Reverse {
 	public static void name() {
 		String name="Gokul";
 		char[] arr=name.toCharArray();
-		
+		for (char c : arr) {
+			System.out.println(c);
+		}
 		
 	}
 	

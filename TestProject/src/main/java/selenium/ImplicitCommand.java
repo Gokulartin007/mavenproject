@@ -1,5 +1,6 @@
 package selenium;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -30,7 +31,7 @@ public class ImplicitCommand {
 		
 		
 		//default time for wait command is zero but testing standard time 30
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		  //WebDriverWait
 		  
 	    driver.findElement(By.xpath("//a[text()='Sign out']")).click();

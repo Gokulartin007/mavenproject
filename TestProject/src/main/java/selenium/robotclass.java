@@ -81,6 +81,5 @@ public class robotclass
 		robot.keyRelease(KeyEvent.VK_SHIFT);
 		robot.keyPress(KeyEvent.VK_BACK_SPACE);
 		
-		
 	}
 }

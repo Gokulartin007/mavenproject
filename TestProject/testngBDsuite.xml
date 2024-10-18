@@ -6,5 +6,8 @@
 <parameter name="Password" value="password"></parameter>
 <parameter name="Query" value="select * from persons;"></parameter>
   <test thread-count="5" name="Test">
+   <classes>
+      <class name="DatabaseTesting.DataConnectionSuite"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

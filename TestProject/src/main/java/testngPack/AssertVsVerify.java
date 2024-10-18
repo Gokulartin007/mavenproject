@@ -35,7 +35,7 @@ public class AssertVsVerify {
 		AssertVsVerify ass=new AssertVsVerify();
 		
 		AssertVsVerify.SoftAssert();
-		ass.hardAssert();
+		hardAssert();
 	}
 
 }

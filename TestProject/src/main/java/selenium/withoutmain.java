@@ -1,10 +1,11 @@
 package selenium;
 
-public class withoutmain {
+@FunctionalInterface
+public interface withoutmain {
 
-	public void main() {
-		System.out.println("displayed");
-	}
-	
-	
+	//which will have only one abstract method and we 
+	public void show(int name, int age); 
 }
+
+
+

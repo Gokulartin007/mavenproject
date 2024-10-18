@@ -25,7 +25,7 @@ public class ExtentReportor {
 	@Parameters({"Tc_name"})
 	@BeforeSuite
 	public void beforeSuite(String Tc_name) {
-		reporter= new ExtentSparkReporter("./TestResults/" +timestamp+ ".html");
+		reporter= new ExtentSparkReporter("./TestResults/Reports_" +timestamp+ ".html");
 		extend=new ExtentReports();
 		extend.attachReporter(reporter);
 		test=extend.createTest(Tc_name);
@@ -37,6 +37,7 @@ public class ExtentReportor {
   public void func() {
 	  System.out.println("Function execution");
 	  test.log(Status.PASS, "step login");
+	  test.assignAuthor("Gokul sam");
   }
   
   

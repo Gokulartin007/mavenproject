@@ -18,7 +18,7 @@ public class ActiveElement {
 	//we can interact with active element without finding it, just like switchTo().active element 
 	WebDriver driver;
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
 		//WebDriverManager.chromedriver().setup();
 		
         //Launching the browser

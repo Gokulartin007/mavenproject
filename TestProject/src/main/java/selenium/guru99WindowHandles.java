@@ -15,7 +15,7 @@ public class guru99WindowHandles {
 
 
 	public static void main(String[] args) throws InterruptedException {									
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gokul\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gokul\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 		//WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();		
 
@@ -25,7 +25,8 @@ public class guru99WindowHandles {
 
 		driver.findElement(By.xpath("//*[contains(@href,'popup.php')]")).click();			
 
-		String MainWindow=driver.getWindowHandle();		
+		String MainWindow=driver.getWindowHandle();	
+		System.out.println("main "+MainWindow);
 
 		// To handle all new opened window.				
 		Set<String> s1=driver.getWindowHandles();
@@ -54,8 +55,8 @@ public class guru99WindowHandles {
 		List<String> list=new ArrayList<String>(s1);
 		int count=0;
 		for (String windows : list) {
-			++count;
 			System.out.println(count+" "+windows);
+			++count;
 			
 			
 
@@ -66,6 +67,8 @@ public class guru99WindowHandles {
 		
 		// Switching to Parent window i.e Main Window.
 		driver.switchTo().window(MainWindow);
+		
+		//driver.switchTo().defaultContent(); we don't have default content concept in windows
 		System.out.println(MainWindow);
 		//driver.quit();
 	}

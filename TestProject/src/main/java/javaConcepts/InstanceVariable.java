@@ -56,5 +56,6 @@ public class InstanceVariable {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
+		System.out.println("after Div");
 	}
 }

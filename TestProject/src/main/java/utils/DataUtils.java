@@ -6,6 +6,7 @@ import testngPack.ReadExceldata;
 
 public class DataUtils {
 
+	//this takes data from below code
 	@DataProvider(name="Utilslogin" ,indices = {1,2}, parallel = true)
 	public String[][] LoginData() {
 		String[][] data=new String[3][2];
@@ -18,6 +19,8 @@ public class DataUtils {
 		return data;
 	}
 	
+	
+	//this takes data from the external file i.e excel
 	@DataProvider(name="excelLogin")
 	public String[][] ExcelLoginData() throws Exception {
 		
